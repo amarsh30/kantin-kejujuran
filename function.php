@@ -1,7 +1,7 @@
 <?php 
 session_start();
 // koneksi ke database
-$conn = mysqli_connect("localhost", "root", "", "kantin");
+$conn = mysqli_connect("emansj.net", "emnsjnet_amr", "sFVeEujI", "emnsjnet_amr");
 
 function query($query) {
 	global $conn;
