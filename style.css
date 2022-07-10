@@ -1,0 +1,162 @@
+:root{
+	/* color */
+	--primaryColor : white;
+	--secondaryColor : #2C3E50;
+	--tertiaryColor : #0db8de;
+
+	/* font */
+	--mainFont : 'Poppins', sans-serif;
+}
+
+html,
+body {
+	height: 100%;
+	background-color: #0F192E !important;
+	font-family: var(--mainFont);
+}
+
+.heading {
+	font-family: var(--mainFont);
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.subheading {
+	font-weight: 300;
+}
+
+/* navbar */
+.navbar-brand {
+	font-family: var(--mainFont);
+	font-weight: 900;
+}
+
+.nav-link {
+	font-family: var(--mainFont);
+}
+
+.nav-link.active {
+	font-weight: 700;
+	color: var(--tertiaryColor) !important;
+}
+
+/* home */
+
+
+
+@media screen and (min-width: 768px) {
+	.home {
+		padding-top: 14rem;
+	}
+	.home .heading {
+		font-size: 36px;
+	}
+	.home .subheading {
+		font-size: 20px;
+	}
+}
+
+/* produk */
+.col h1 {
+	color: var(--primaryColor);
+}
+
+.info p{
+	font-family: var(--mainFont);
+	font-weight: 300;
+	font-size: 22px;
+	color: var(--primaryColor);
+}
+
+.product-populer .card-product {
+	width: 300px;
+}
+
+.product-populer .img-box {
+	border: 2px solid var(--primaryColor);
+	
+}
+
+.global-container{
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--tertiaryColor);
+}
+
+form {
+	padding-top: 10px;
+	font-size: 14px;
+	margin-top: 30px;
+}
+
+.login-form-reg {
+	width: 380px;
+	height: 550px;
+	margin: 20px;
+	background: var(--secondaryColor) !important;
+	border-radius: 10px !important;
+}
+
+.login-form-tambah {
+	width: 500px;
+	height: 630px;
+	margin: 20px;
+	background: var(--secondaryColor) !important;
+	border-radius: 10px !important;
+}
+
+
+.login-form {
+	width: 380px;
+	height: 400px;
+	margin: 20px;
+	background: var(--secondaryColor) !important;
+	border-radius: 10px !important;
+}
+
+
+textarea {
+	background: var(--secondaryColor);
+	border: 2px solid var(--tertiaryColor);
+	border-radius: 10px;
+	margin-bottom: 25px;
+	width: 457px;
+	outline: none;
+	margin: 0;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="file"] {
+	background: var(--secondaryColor);
+	border: 2px solid var(--tertiaryColor);
+	border-radius: 10px;
+	margin-bottom: 25px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="file"]:focus {
+	outline: none;
+	border: none;
+	background: var(--secondaryColor) ;
+	margin: 0;
+}
+
+.card-title {
+	font-weight: 900;
+	padding-top: 20px;
+}
+
+.btn {
+	background: var(--tertiaryColor) !important;
+	font-size: 14px;
+	transform: translateY(10px);
+	border-radius: 10px !important;
+}
+
+label {
+	display: block;
+}
