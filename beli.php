@@ -6,14 +6,14 @@ if( isset($_POST["submit"])) {
 	if ( beli($_POST) > 0) {
 		echo "
 			<script>
-				alert('data berhasil ditambahkan!');
+				alert('Produk berhasil dibeli!');
 				document.location.href = 'dashboard.php';
 			</script>
 		";
 	} else {
 		echo "
 			<script>
-				alert('data gagal ditambahkan!');
+				alert('Produk berhasildibeli!');
 				document.location.href = 'dashboard.php';
 			</script>";
 	}

@@ -10,14 +10,14 @@ if( isset($_POST["submit"])) {
 	if ( withdraw($_POST) > 0) {
 		echo "
 			<script>
-				alert('data berhasil ditambahkan!');
+				alert('Uang berhasil ditarik!');
 				document.location.href = 'dashboard.php';
 			</script>
 		";
 	} else {
 		echo "
 			<script>
-				alert('data gagal ditambahkan!');
+				alert('Uang gagal ditarik!');
 				document.location.href = 'dashboard.php';
 			</script>";
 	}
