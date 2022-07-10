@@ -1,5 +1,8 @@
 <?php  
 require 'function.php';
+if (!isset($_SESSION['id_pelajar'])) {
+	header("location: index.php");
+}
 // $produk = query("SELECT * FROM produk WHERE status ='Belum'"); 
 
 ?>
@@ -57,7 +60,7 @@ require 'function.php';
 						<h5 class="card-title"><?= $row["nama"]; ?></h5>
 						<p class="card-text">Rp.<?= number_format($row["harga"]); ?></p>
 						<p class="card-text"><?= $row["deskripsi"]; ?></p>
-						<a href="beli.php" class="btn btn-primary">Beli</a>
+						<a href="beli.php?id=<?= $row["id"] ?>" class="btn btn-primary">Beli</a>
 					</div>
 				</div>
 			</div>

@@ -2,20 +2,19 @@
 require 'function.php';
 // cek apakah tombol submit sudah ditekan atau belum
 if( isset($_POST["submit"])) {
-
 	// cek apakah data berhasil di tambahkan
 	if ( beli($_POST) > 0) {
 		echo "
 			<script>
 				alert('data berhasil ditambahkan!');
-				document.location.href = 'index.php';
+				document.location.href = 'dashboard.php';
 			</script>
 		";
 	} else {
 		echo "
 			<script>
 				alert('data gagal ditambahkan!');
-				document.location.href = 'index.php';
+				document.location.href = 'dashboard.php';
 			</script>";
 	}
 }
@@ -40,13 +39,13 @@ if( isset($_POST["submit"])) {
 </head>
 <body>
 	<h1>BeliProduk</h1>
-	<input type="hidden" name="id" value="<?= $_GET['id'] ?>">
 	<div class="global-container">
 		<div class="card login-form">
 			<div class="card-body">
 				<h1 class="card-title text-center">Bayar</h1>
 				<div class="card-text">	 
 				<form action="" method="post" enctype="multipart/form-data">
+				<input type="hidden" name="id" value="<?= $_GET['id'] ?>">
 				
 				<!-- <div class="form-group">
 					<label for="nama">Nama : </label>

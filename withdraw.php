@@ -1,5 +1,8 @@
 <?php 
 require 'function.php';
+if (!isset($_SESSION['id_pelajar'])) {
+	header("location: index.php");
+}
 // cek apakah tombol submit sudah ditekan atau belum
 if( isset($_POST["submit"])) {
 

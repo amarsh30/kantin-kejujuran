@@ -1,7 +1,7 @@
 <?php 
+session_start();
 // koneksi ke database
 $conn = mysqli_connect("localhost", "root", "", "kantin");
-
 
 function query($query) {
 	global $conn;
@@ -30,7 +30,7 @@ function tambah($data) {
 	// query insert data
 	$query = "INSERT INTO produk
 				VALUES
-				('', '$nama', '$harga', '$deskripsi','$gambar')";
+				('', '$nama', '$harga', '$deskripsi','$gambar', 'Belum')";
 
 	mysqli_query($conn, $query);
 
