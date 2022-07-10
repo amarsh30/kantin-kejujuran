@@ -38,7 +38,6 @@ if( isset($_POST["submit"])) {
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<h1>BeliProduk</h1>
 	<div class="global-container">
 		<div class="card login-form">
 			<div class="card-body">
