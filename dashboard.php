@@ -10,7 +10,7 @@ if (!isset($_SESSION['id_pelajar'])) {
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Halaman Admin</title>
+	<title>Halaman Dashboard</title>
 	 <!-- Required meta tags -->
 	 <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">

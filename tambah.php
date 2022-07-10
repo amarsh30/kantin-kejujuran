@@ -45,7 +45,7 @@ if( isset($_POST["submit"])) {
 	<div class="global-container">
 		<div class="card login-form-tambah">
 			<div class="card-body">
-				<h1 class="card-title text-center">Tambah Produk</h1>
+				<h2 class="card-title text-center">Tambah Produk</h2>
 				<div class="card-text">
 				<form action="" method="post" enctype="multipart/form-data">
 					<div class="form-group">
