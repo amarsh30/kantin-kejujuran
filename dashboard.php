@@ -37,8 +37,8 @@ if (!isset($_SESSION['id_pelajar'])) {
 				<?php $query = $conn->query("SELECT * FROM balance_box"); while ($row = $query->fetch_assoc()): ?>
 					<a class="nav-link active" aria-current="page" href="#">Home</a>
 					<a class="nav-link" href="tambah.php">Tambah Produk</a>
-					
 					<a class="nav-link" href="withdraw.php"> Rp.<?= number_format($row["jumlah"]); ?></a>
+					<a class="nav-link" href="logout.php">Logout</a>
 				</div>
 				<?php endwhile; ?>
 				</div>
